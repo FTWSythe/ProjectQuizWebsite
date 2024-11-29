@@ -102,7 +102,7 @@ button:hover {
 
 }
 
-.theme{
+.theme {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,4 +110,32 @@ button:hover {
     border-radius: 10px;
     width: 350px;
     height: 160px;
+    font-size: 18px;
+    color: white; /* For text contrast */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional for better visibility */
+    border: none;
+    cursor: pointer;
+    background-size: cover; /* Ensures the image fills the button */
+    background-position: center;
+    transition: 0.3s ease; /* Smooth hover effect */
 }
+
+/* Specific button backgrounds */
+.auto_logo {
+    background-image: url('/images/Car-Logos.webp'); /* Replace with the actual path */
+}
+
+.country_flag {
+    background-image: url('/images/country flags.png'); /* Replace with the actual path */
+}
+
+.comic_hero {
+    background-image: url('/images/comic heroes.webp'); /* Replace with the actual path */
+}
+
+/* Optional: Add hover effect */
+.theme:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
