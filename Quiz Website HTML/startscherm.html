@@ -8,23 +8,35 @@
     <title>Startscherm</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Quiz%20Website%20CSS/styles.css">
+    <script src="/Quiz%20Website%20JS/scripts.js" defer></script>
 </head>
 <body>
 <main>
-    <section>
-        <h1>Welkom</h1>
-        <p class="uitleg_quiz">Test je kennis met onze leuke en uitdagende quiz!<br>
-            Beantwoord zoveel mogelijk vragen en kijk hoe goed je scoort.<br>
-            Succes!</p>
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Welkom bij de Quiz!</h2>
+            <p>Beantwoord zoveel mogelijk vragen en kijk hoe goed je scoort.<br>
+                Vul je naam in om te beginnen!</p>
+            <button id="closePopup" class="close-button">Begrepen</button>
+        </div>
+    </div>
 
-        <form class="naam_invoer" action="themascherm.html" method="GET">
+    <!-- Hidden content -->
+    <section>
+        <h1 id="welcomeMessage" style="display: none;">Welkom</h1>
+        <p id="quizDescription" class="uitleg_quiz" style="display: none;">
+            Test je kennis met onze leuke en uitdagende quiz!<br>
+            Beantwoord zoveel mogelijk vragen en kijk hoe goed je scoort.<br>
+            Succes!
+        </p>
+
+        <form class="naam_invoer" id="nameForm">
             <label for="name">Wat is je naam?</label><br>
-            <input type="text" id="name" name="name" placeholder="Your name">
-            <button type="submit">Start quiz</button>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <button class="start_button" type="submit">Start quiz</button>
         </form>
     </section>
-
 </main>
 </body>
 </html>
-

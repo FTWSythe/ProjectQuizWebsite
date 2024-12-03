@@ -5,33 +5,31 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Startscherm</title>
+    <title>Themascherm</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Quiz%20Website%20CSS/styles.css">
+    <script src="/Quiz%20Website%20JS/scripts.js" defer></script>
 </head>
 <body>
-    <main class="container">
-        <header>
-            <p class="team-name">[Teamnaam]</p>
-        </header>
-        <section class="welcome-message">
-            <h1>Hallo [naam speler], <br>
-                Welke quiz wil je spelen?</h1>
-        </section>
-        <section class="quiz-themes">
-            <form action="autoquiz.html" method="GET">
-                <button class="theme auto_logo" >Auto Logo</button>
-            </form>
-            <form action="/quiz" method="GET">
-                <button class="theme country_flag">Country Flag</button>
-            </form>
-            <form action="/quiz" method="GET">
-                <button class="theme comic_hero">Comic Hero</button>
-            </form>
-        </section>
-
-
-    </main>
+<main class="container">
+    <header>
+        <p class="team-name" id="teamName">[Teamnaam]</p>
+    </header>
+    <section class="welcome-message">
+        <h1 id="welcomeMessage">Hallo [naam speler], <br>
+            Welke quiz wil je spelen?</h1>
+    </section>
+    <section class="quiz-themes">
+        <a href="/Quiz%20Website%20HTML/Quizzes/autoquiz.html">
+            <button class="auto_logo">Auto Logo</button>
+        </a>
+        <a href="/Quiz%20Website%20HTML/Quizzes/countryquiz.html">
+            <button class="country_flag">Country Flag</button>
+        </a>
+        <a href="/Quiz%20Website%20HTML/Quizzes/comicquiz.html">
+            <button class="comic_hero">Comic Hero</button>
+        </a>
+    </section>
+</main>
 </body>
 </html>
-
