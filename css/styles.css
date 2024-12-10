@@ -104,6 +104,7 @@ button:hover {
     flex-direction: row;
     gap: 50px;
 
+
 }
 
 .auto_logo, .country_flag, .comic_hero {
@@ -122,6 +123,7 @@ button:hover {
     background-size: cover; /* Ensures the image fills the button */
     background-position: center;
     transition: 0.3s ease; /* Smooth hover effect */
+    background-color: mediumblue;
 }
 
 @media screen and (max-width: 800px) {
