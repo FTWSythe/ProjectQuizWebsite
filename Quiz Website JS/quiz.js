@@ -12,49 +12,21 @@ const quizData = [
         answers: ["Honda", "Audi", "Chevrolet", "Mercedes-Benz"],
         correct: 1
     },
-    // Add up to 10 questions
-    // {
-    //     question: "Another Question",
-    //     image: "/images/car_logo3.png",
-    //     answers: ["Answer A", "Answer B", "Answer C", "Answer D"],
-    //     correct: 0
-    // }
+    // Add more questions as needed
 ];
 
-// DOM Elements
-const questionElement = document.querySelector('h1');
-const imageElement = document.querySelector('.image-placeholder img');
-const answerButtons = document.querySelectorAll('.answer-button');
-const timerElement = document.querySelector('.timer span');
-const popup = document.getElementById('popup');
-const closePopupButton = document.getElementById('closePopup');
-const quizContainer = document.querySelector('.quiz-container');
-
-// State Variables
 let currentQuestionIndex = 0;
-let score = 0;
 let timer;
-let timeRemaining = 30; // Time for each question in seconds
+let timeRemaining = 30; // Timer duration for each question
 
-// Function to Start Timer
-function startTimer() {
-    timeRemaining = 30; // Reset timer for the new question
-    timer = setInterval(() => {
-        timeRemaining--;
-        timerElement.textContent = timeRemaining;
-        if (timeRemaining <= 0) {
-            clearInterval(timer);
-            showFailPopup();
-        }
-    }, 1000);
-}
-
-// Function to Show the Current Question
+// Load the next question
 function loadQuestion() {
     const currentQuestion = quizData[currentQuestionIndex];
 
-    questionElement.textContent = `Vraag ${currentQuestionIndex + 1}: ${currentQuestion.question}`;
-    imageElement.src = currentQuestion.image; // Image for the question
+    document.getElementById('questionText').textContent = `Vraag ${currentQuestionIndex + 1}: ${currentQuestion.question}`;
+    document.getElementById('questionImage').src = currentQuestion.image;
+
+    const answerButtons = document.querySelectorAll('.answer-button');
     answerButtons.forEach((button, index) => {
         button.textContent = currentQuestion.answers[index];
         button.onclick = () => handleAnswerSelection(index);
@@ -63,55 +35,56 @@ function loadQuestion() {
     startTimer();
 }
 
-// Function to Handle Answer Selection
-function handleAnswerSelection(selectedAnswerIndex) {
+// Handle the answer selection
+function handleAnswerSelection(selectedIndex) {
     const correctAnswerIndex = quizData[currentQuestionIndex].correct;
 
-    // Check if the selected answer is correct
-    if (selectedAnswerIndex === correctAnswerIndex) {
-        score++;
+    if (selectedIndex === correctAnswerIndex) {
+        // Correct answer selected
     }
 
-    // Move to the next question
     currentQuestionIndex++;
 
-    // If there are more questions, load the next one
     if (currentQuestionIndex < quizData.length) {
         loadQuestion();
     } else {
-        // If it's the last question, redirect to the end page
-        window.location.href = "ENDPAGE.html"; // Modify this link later
+        window.location.href = "ENDPAGE.html"; // Go to the end page
     }
 }
 
-// Function to Show Fail Popup (when timer runs out)
+// Start the timer
+function startTimer() {
+    timeRemaining = 30;
+    document.getElementById('timerText').textContent = timeRemaining;
+
+    timer = setInterval(() => {
+        timeRemaining--;
+        document.getElementById('timerText').textContent = timeRemaining;
+
+        if (timeRemaining <= 0) {
+            clearInterval(timer);
+            showFailPopup();
+        }
+    }, 1000);
+}
+
+// Show fail popup
 function showFailPopup() {
-    popup.classList.add('show');
+    document.getElementById('popup').classList.add('show');
 }
 
-// Function to Close Fail Popup
-function closeFailPopup() {
-    popup.classList.remove('show');
-}
+// Restart or go back to the theme selection
+document.getElementById('restartButton').addEventListener('click', () => {
+    currentQuestionIndex = 0;
+    loadQuestion();
+    document.getElementById('popup').classList.remove('show');
+});
 
-// Function to Restart Quiz or Go Back to Theme Selection
-function handleFailPopupAction(action) {
-    if (action === 'restart') {
-        currentQuestionIndex = 0;
-        score = 0;
-        loadQuestion();
-        closeFailPopup();
-    } else if (action === 'back') {
-        window.location.href = "themascherm.html"; // Redirect to the theme selection page
-    }
-}
+document.getElementById('backButton').addEventListener('click', () => {
+    window.location.href = "themascherm.html"; // Go back to the theme selection page
+});
 
-// Add event listeners to the buttons in the fail popup
-closePopupButton.addEventListener('click', closeFailPopup);
-document.getElementById('restartButton').addEventListener('click', () => handleFailPopupAction('restart'));
-document.getElementById('backButton').addEventListener('click', () => handleFailPopupAction('back'));
-
-// Start the quiz when the page loads
+// Initialize the quiz when the page loads
 window.onload = function () {
-    loadQuestion(); // Load the first question when the page is loaded
+    loadQuestion();
 };
