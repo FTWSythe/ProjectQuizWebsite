@@ -1,0 +1,299 @@
+{
+  "autoquiz": [
+    {
+      "id": 1,
+      "question": "Welk auto logo heeft een paard op een geel schild?",
+      "image": "/images/auto/ferrari logo.png",
+      "options": ["Ferrari", "Lamborghini", "Porsche", "Mustang"],
+      "correct_answer": "Ferrari"
+    },
+    {
+      "id": 2,
+      "question": "Welk automerk heeft een blauw-witte ronde logo?",
+      "image": "/images/auto/bmw logo.webp",
+      "options": ["Audi", "BMW", "Volkswagen", "Volvo"],
+      "correct_answer": "BMW"
+    },
+    {
+      "id": 3,
+      "question": "Welk auto logo bestaat uit vier verbonden ringen?",
+      "image": "/images/auto/audi logo.png",
+      "options": ["Audi", "Toyota", "Volkswagen", "Mercedes"],
+      "correct_answer": "Audi"
+    },
+    {
+      "id": 4,
+      "question": "Welk automerk heeft een logo met een springende stier?",
+      "image": "/images/auto/lamborghini-logo-png-transparent.png",
+      "options": ["Ferrari", "Lamborghini", "Bugatti", "Maserati"],
+      "correct_answer": "Lamborghini"
+    },
+    {
+      "id": 5,
+      "question": "Welk automerk heeft een driepuntige ster in een cirkel?",
+      "image": "/images/auto/mercedes-benz-9-logo-png-transparent.png",
+      "options": ["Mercedes-Benz", "Tesla", "Mazda", "Kia"],
+      "correct_answer": "Mercedes-Benz"
+    },
+    {
+      "id": 6,
+      "question": "Welk automerk heeft een logo met een rode diamantvorm?",
+      "image": "/images/auto/Mitsubishi_logo..png",
+      "options": ["Mitsubishi", "Mazda", "Nissan", "Hyundai"],
+      "correct_answer": "Mitsubishi"
+    },
+    {
+      "id": 7,
+      "question": "Welk automerk heeft een logo met een leeuw?",
+      "image": "/images/auto/peugeot_logo.png",
+      "options": ["Peugeot", "Citroën", "Renault", "Fiat"],
+      "correct_answer": "Peugeot"
+    },
+    {
+      "id": 8,
+      "question": "Welk automerk heeft een logo dat lijkt op een bliksemschicht?",
+      "image": "/images/auto/opel-logo.png",
+      "options": ["Ford", "Opel", "Chevrolet", "Dacia"],
+      "correct_answer": "Opel"
+    },
+    {
+      "id": 9,
+      "question": "Welk automerk heeft een logo met twee chevrons boven elkaar?",
+      "image": "/images/auto/Citroen-New-Logo-Transparent-Free-PNG.png",
+      "options": ["Citroën", "Renault", "Fiat", "Volvo"],
+      "correct_answer": "Citroën"
+    },
+    {
+      "id": 10,
+      "question": "Welk automerk heeft een logo met een zilveren 'T' op een rode achtergrond?",
+      "image": "/images/auto/Tesla-Logo-PNG-Image-HD.png",
+      "options": ["Tesla", "Toyota", "Subaru", "Suzuki"],
+      "correct_answer": "Tesla"
+    }
+  ],
+  "flagquiz": [
+    {
+      "question": "Van welk land is deze vlag?",
+      "image": "/images/vlaggen/netherlands.png",
+      "options": [
+        "Nederland",
+        "Frankrijk",
+        "Luxemburg",
+        "Rusland"
+      ],
+      "correct_answer": "Nederland"
+    },
+    {
+      "question": "Van welk land is deze vlag?",
+      "image": "/images/vlaggen/germany.png",
+      "options": [
+        "België",
+        "Duitsland",
+        "Oostenrijk",
+        "Hongarije"
+      ],
+      "correct_answer": "Duitsland"
+    },
+    {
+      "question": "Van welk land is deze vlag?",
+      "image": "/images/vlaggen/france.png",
+      "options": [
+        "Italië",
+        "Frankrijk",
+        "Nederland",
+        "Luxemburg"
+      ],
+      "correct_answer": "Frankrijk"
+    },
+    {
+      "question": "Van welk land is deze vlag?",
+      "image": "/images/vlaggen/spain.png",
+      "options": [
+        "Portugal",
+        "Italië",
+        "Spanje",
+        "Roemenië"
+      ],
+      "correct_answer": "Spanje"
+    },
+    {
+      "question": "Van welk land is deze vlag?",
+      "image": "/images/vlaggen/italy.webp",
+      "options": [
+        "Mexico",
+        "Hongarije",
+        "Ierland",
+        "Italië"
+      ],
+      "correct_answer": "Italië"
+    },
+    {
+      "question": "Van welk land is deze vlag?",
+      "image": "/images/vlaggen/uk.png",
+      "options": [
+        "Verenigde Staten",
+        "Australië",
+        "Verenigd Koninkrijk",
+        "Nieuw-Zeeland"
+      ],
+      "correct_answer": "Verenigd Koninkrijk"
+    },
+    {
+      "question": "Van welk land is deze vlag?",
+      "image": "/images/vlaggen/belgium.png",
+      "options": [
+        "Duitsland",
+        "België",
+        "Nederland",
+        "Frankrijk"
+      ],
+      "correct_answer": "België"
+    },
+    {
+      "question": "Van welk land is deze vlag?",
+      "image": "/images/vlaggen/portugal.png",
+      "options": [
+        "Spanje",
+        "Italië",
+        "Portugal",
+        "Griekenland"
+      ],
+      "correct_answer": "Portugal"
+    },
+    {
+      "question": "Van welk land is deze vlag?",
+      "image": "/images/vlaggen/sweden.png",
+      "options": [
+        "Noorwegen",
+        "Finland",
+        "Denemarken",
+        "Zweden"
+      ],
+      "correct_answer": "Zweden"
+    },
+    {
+      "question": "Van welk land is deze vlag?",
+      "image": "/images/vlaggen/switzerland.webp",
+      "options": [
+        "Oostenrijk",
+        "Denemarken",
+        "Zwitserland",
+        "Polen"
+      ],
+      "correct_answer": "Zwitserland"
+    }
+  ],
+  
+  "heroquiz": [
+    {
+      "question": "Wie is deze superheld?",
+      "image": "/images/heroes/spiderman.png",
+      "options": [
+        "Spider-Man",
+        "Iron Man",
+        "Batman",
+        "Superman"
+      ],
+      "correct_answer": "Spider-Man"
+    },
+    {
+      "question": "Wie is deze superheld?",
+      "image": "/images/heroes/batman.png",
+      "options": [
+        "Black Panther",
+        "Batman",
+        "Wolverine",
+        "Green Arrow"
+      ],
+      "correct_answer": "Batman"
+    },
+    {
+      "question": "Wie is deze superheld?",
+      "image": "/images/heroes/ironman.png",
+      "options": [
+        "War Machine",
+        "Captain America",
+        "Iron Man",
+        "Doctor Strange"
+      ],
+      "correct_answer": "Iron Man"
+    },
+    {
+      "question": "Wie is deze superheld?",
+      "image": "/images/heroes/superman.png",
+      "options": [
+        "Shazam",
+        "Thor",
+        "Captain Marvel",
+        "Superman"
+      ],
+      "correct_answer": "Superman"
+    },
+    {
+      "question": "Wie is deze superheld?",
+      "image": "/images/heroes/wonderwoman.png",
+      "options": [
+        "Black Widow",
+        "Wonder Woman",
+        "Captain Marvel",
+        "Scarlet Witch"
+      ],
+      "correct_answer": "Wonder Woman"
+    },
+    {
+      "question": "Wie is deze superheld?",
+      "image": "/images/heroes/thor.png",
+      "options": [
+        "Aquaman",
+        "Captain America",
+        "Thor",
+        "Doctor Strange"
+      ],
+      "correct_answer": "Thor"
+    },
+    {
+      "question": "Wie is deze superheld?",
+      "image": "/images/heroes/blackpanther.png",
+      "options": [
+        "Black Panther",
+        "Batman",
+        "Spider-Man",
+        "Black Adam"
+      ],
+      "correct_answer": "Black Panther"
+    },
+    {
+      "question": "Wie is deze superheld?",
+      "image": "/images/heroes/captainamerica.jpg",
+      "options": [
+        "Superman",
+        "Captain Britain",
+        "Captain America",
+        "Winter Soldier"
+      ],
+      "correct_answer": "Captain America"
+    },
+    {
+      "question": "Wie is deze superheld?",
+      "image": "/images/heroes/hulk.png",
+      "options": [
+        "Beast",
+        "Hulk",
+        "Thanos",
+        "Abomination"
+      ],
+      "correct_answer": "Hulk"
+    },
+    {
+      "question": "Wie is deze superheld?",
+      "image": "/images/heroes/doctorstrange.jpg",
+      "options": [
+        "Iron Man",
+        "Doctor Fate",
+        "Doctor Strange",
+        "Scarlet Witch"
+      ],
+      "correct_answer": "Doctor Strange"
+    }
+  ]
+}
