@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.score, .max-score, .player-name {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.scoreboard {
+    margin: 1rem 0;
+}
+
+.scoreboard ol {
+    padding-left: 1.5rem;
+}
+
+.scoreboard li {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    background: #f8f8f8;
+}
+
+.scoreboard li.top-1 {
+    background: gold;
+    font-weight: bold;
+}
+
+.scoreboard li.top-2 {
+    background: silver;
+    font-weight: bold;
+}
+
+.scoreboard li.top-3 {
+    background: #cd7f32;
+    font-weight: bold;
+}
+
+.retry-button {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.retry-button:hover {
+    background-color: #0056b3;
+}
+
+.review {
+    margin-top: 1.5rem;
+}
+
+.question {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background: #f8f8f8;
+}
+
+.retry-button {
+    text-decoration: none;
+}
+
+
+.result {
+    font-weight: bold;
+}
+
+.result.correct {
+    color: green;
+}
+
+.result.wrong {
+    color: red;
+}
+
+.user-answer, .correct-answer {
+    font-style: italic;
+    color: #555;
+}
+
+.question-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px; /* of een andere gewenste maximale breedte */
+    height: auto;
+    margin: 10px auto;
+    border-radius: 8px;
+}
