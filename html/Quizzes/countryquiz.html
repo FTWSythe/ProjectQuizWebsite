@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vlaggen Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
 
+<body>
+    <div class="quiz-container">
+        <h1 id="questionText">Vraag 1: </h1>
+        <div class="question-section">
+            <div class="team-name" id="teamName">[Teamnaam]</div>
+            <div class="image-placeholder">
+                <div id="questionImage"></div>
+            </div>
+            <div class="timer">
+                <span id="timerText">30</span>
+            </div>
+        </div>
+        <div class="answers-section">
+            <button class="answer-button" id="answerA">Answer A</button>
+            <button class="answer-button" id="answerB">Answer B</button>
+            <button class="answer-button" id="answerC">Answer C</button>
+            <button class="answer-button" id="answerD">Answer D</button>
+        </div>
+    </div>
+
+
+
+<script>
+    window.quizType = 'flagquiz';
+</script>
+<script src="/javascript/quiz.js"></script>
 </body>
 </html>

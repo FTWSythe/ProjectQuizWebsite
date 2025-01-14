@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="/css/res-style.css">
+  <script src="/javascript/resultaat.js"></script>
+</head>
+<body>
+<div class="quiz-container">
+  <h1>Gefeliciteerd <span class="player-name">[naam speler]</span>, je hebt de quiz afgerond.</h1>
+  <p>Je score is: <span class="score">[score]</span> van de <span class="max-score">[maximale score]</span></p>
+
+  <div class="scoreboard">
+    <h2>Het scoreboard</h2>
+    <ol>
+      <li>Naam speler - xx punten</li>
+      <li>Naam speler - xx punten</li>
+      <li>Naam speler - xx punten</li>
+    </ol>
+  </div>
+
+  <a href="/html/Quizzes/autoquiz.html" class="retry-button">Doe de quiz opnieuw</a>
+
+  <div class="review">
+    <h2>Hieronder kun je zien hoe je het gedaan hebt:</h2>
+
+    <div class="question">
+      <h3>Vraag 1: <span>[Laat hier de vraag nogmaals zien]</span></h3>
+      <p>Deze vraag had je <span class="result correct">[goed/fout]</span></p>
+      <p>Jouw antwoord: <span class="user-answer">[Laat het antwoord van de gebruiker zien]</span></p>
+      <p>Het juiste antwoord: <span class="correct-answer">[Laat het juiste antwoord zien]</span></p>
+    </div>
+
+    <div class="question">
+      <h3>Vraag 2: <span>[Laat hier de vraag nogmaals zien]</span></h3>
+      <p>Deze vraag had je <span class="result wrong">[goed/fout]</span></p>
+      <p>Jouw antwoord: <span class="user-answer">[Laat het antwoord van de gebruiker zien]</span></p>
+      <p>Het juiste antwoord: <span class="correct-answer">[Laat het juiste antwoord zien]</span></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
