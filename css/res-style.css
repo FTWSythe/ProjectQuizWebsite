@@ -128,3 +128,32 @@ h3 {
     margin: 10px auto;
     border-radius: 8px;
 }
+
+@media screen and (max-width: 800px) {
+    .quiz-container {
+        margin: 1rem;
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .scoreboard li {
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
+    .question {
+        padding: 0.8rem;
+    }
+
+    .question-image {
+        max-width: 100%;
+    }
+}
