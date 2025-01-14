@@ -159,6 +159,34 @@ button:hover {
     .auto_logo, .country_flag, .comic_hero {
         background-size: contain; /* Zorg dat de afbeelding goed schaalt */
     }
+
+    .naam_invoer {
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .start_button {
+        width: 100%;
+    }
+
+    .quiz-themes {
+        padding: 0 20px;
+    }
+
+    .auto_logo, .country_flag, .comic_hero {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .popup-content {
+        width: 90%;
+        margin: 0 10px;
+        padding: 15px;
+    }
 }
 
 /* Popup background */
